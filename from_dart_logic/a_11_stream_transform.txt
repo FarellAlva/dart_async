@@ -36,3 +36,35 @@ distinct() : Stream<T> untuk meng-ignore data yang sama dengan data sebelumnya
 skip(int) : Stream<T> untuk meng-ignore jumlah data diawal
 
 skipeWhile(test) : Stream<T> untuk meng-ignore jumlah di awal ketika kondisi test masih oke
+
+
+
+
+############ transform methode
+
+cast<R> : Stream<R> untuk mengkonversi value Stream
+
+map(R convert(T)) : Stream<R> untuk mengkonversi value 
+    Stream dengan function convert
+
+expand(Iterable<R> convert(T)) : Stream<R> untuk mengkonversi value 
+    Stream menjadi Iterable<R> namun hasil iterable dijadikan data Stream selanjutnya
+
+asyncMap(Future<R> convert(T)) : Stream<R> sama seperti map() namun hasil convert 
+    nya adalah Future<R>
+
+asyncExpand(Stream<R> convert(T)) : Stream<R> sama seperti expand(),
+    namun hasil convert nya adalah Stream<R>
+
+
+###### fold and reduce
+
+Kadang ada kebutuhan kita ingin membuat perhitungan data dari tiap Stream,
+ contoh kita ingin melakukan total untuk semua data di Stream<int>, 
+ kita bisa gunakan method fold dan reduce
+
+    fold(initial, combine) : Future<R>, untuk melakukan combine data dari tiap data di stream, 
+    dengan initial data yag diberikan
+
+    reduce(combine) : Future<R>, untuk melakukan combine data dari tiap data di stream,
+    namun tidak dengan initial data
