@@ -1,0 +1,10 @@
+Isolates adalah tempat semua kode Dart berjalan
+Dalam bahasa pemrograman lain, biasanya aplikasi akan berjalan di satu proses sharing memory dengan beberapa Thread
+Berbeda di Dart, di Dart, kode program berjalan dalam Isolates, yaitu Isolates memiliki memory, queue, thread dan event loop sendiri yang terpisah.
+Kita bisa membuat beberapa Isolates di Dart, namun tiap Isolates akan terpisah secara memory, queue, thread dan event loop, walaupun di aplikasi Dart yang sama 
+
+
+## komunikasi antar Isolates
+
+Walaupun secara memory, queue, thread dan event loop berbeda, namun antar Isolates bisa saling berkomunikasi
+Selain itu salah satu keuntungan menggunakan Isolates, kita tidak perlu takut dengan Race Condition dan Locking ketika menjalankan beberapa Thread, karena tiap Thread akan berjalan di Isolates berbeda-beda

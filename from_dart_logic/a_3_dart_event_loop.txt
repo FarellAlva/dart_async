@@ -1,0 +1,7 @@
+
+Cara kerja Dart mirip seperti NodeJS, 
+dimana dia bekerja dengan Event Loop
+
+Event Loop berisikan satu buah Thread yang akan terus bekerja, 
+dan semua pekerjaan akan dikirim ke Queue (antrian) yang akan 
+dieksekusi satu per satu oleh Thread Event Loop

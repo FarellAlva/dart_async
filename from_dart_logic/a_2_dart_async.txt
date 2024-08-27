@@ -1,0 +1,17 @@
+
+Dart Async merupakan fitur di Dart untuk mendukung fitur Concurrency dan Async
+
+Berbeda dengan bahasa pemrograman seperti Java, 
+
+dimana di Java kita perlu membuat Thread sendiri, 
+di Dart, urusan Thread sudah dilakukan secara internal oleh Dart, 
+sehingga kita bisa fokus membuat task yang akan dijalankan secara Concurrent dan Async
+
+
+#kenapa async??
+
+Operasi Async menjadikan program kita bisa mengerjakan kode lain tanpa harus menunggu pekerjaan selesai
+Contoh, saat kita melakukan operasi yang menggunakan jaringan seperti mengambil data dari Web, Database atau bahkan membaca File. 
+
+Kita tidak perlu menunggu sampai prosesnya selesai, untuk mengerjakan tugas selanjutnya
+Hal ini tidak bisa dilakukan jika kita masih menggunakan operasi Sync
