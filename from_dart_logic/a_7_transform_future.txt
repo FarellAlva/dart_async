@@ -1,0 +1,4 @@
+Method then() milik Future bisa digunakan untuk mengubah 
+bentuk isi Future menjadi Future tipe lain
+
+Kita cukup return kan value yang baru di callback then() nya

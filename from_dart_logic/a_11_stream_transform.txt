@@ -1,0 +1,38 @@
+Stream memiliki banyak method yang bisa kita 
+    gunakan untuk memanipulasi data Stream sebelum dikirim 
+    ke Stream Subscription
+
+Hal ini sangat cocok ketika misal kita ingin melakukan 
+    transform data sebelum data tersebut diterima 
+    oleh Stream Subscription
+
+Ada banyak sekali jenis method di Stream, seperti untuk filtering, 
+    transformation, dan lain-lain
+
+https://api.dart.dev/stable/2.18.4/dart-async/Stream-class.html#instance-methods 
+
+
+############# filter method
+
+take(int) : Stream<T> untuk mengambil data Stream sejumlah tertentu
+
+takeWhile(test): Stream<T> untuk mengambil data Stream selama kondisi 
+    test masih ok
+
+where(test) : Stream<T> untuk hanya mengambil data Stream jika sesuai 
+    kondisi test
+
+lastWhere(test): Future<T> hanya mengambil satu data Stream terakhir 
+    sesuai kondisi test
+
+firstWhere(test): Future<T> hanya mengambil satu data Stream pertama 
+    sesuai kondisi test
+
+drain() : Future<T> untuk meng-ignore semua data Stream, 
+    namun mengirim signal ketika telah selesai
+
+distinct() : Stream<T> untuk meng-ignore data yang sama dengan data sebelumnya
+
+skip(int) : Stream<T> untuk meng-ignore jumlah data diawal
+
+skipeWhile(test) : Stream<T> untuk meng-ignore jumlah di awal ketika kondisi test masih oke

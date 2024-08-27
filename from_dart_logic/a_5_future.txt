@@ -1,0 +1,34 @@
+Tipe data Future di Dart mirip seperti di bahasa pemrograman lain, 
+di Java ada Future, atau di JavaScript ada Promise
+
+Future adalah hasil dari asynchronous computation
+Anggap saja ini seperti return value, 
+yang value ada ketika nanti async computation nya selesai
+
+https://api.dart.dev/stable/2.18.4/dart-async/Future-class.html 
+
+#### future state
+
+Yang namanya computation, bisa sukses bisa gagal, begitu juga di Dart
+Future di Dart memiliki dua states
+Uncompleted, artinya Future belum memiliki value, 
+kemungkinan karena proses computation nya belum selesai
+
+Completed, artinya Future susah memiliki value hasil computation, 
+namun perlu diingat, value bisa sukses atau gagal
+
+
+### future value
+Future adalah tipe data Generic, dimana dia menyimpan data aslinya
+Misal jika menyimpan data String, artinya Future<String>
+Jika menyimpan data int, artinya Future<int>
+Jika Future tidak mengembalikan nilai apapun, kita bisa gunakan Future<void>
+
+
+#### future constructor 
+Ada banyak cara membuat Future
+
+Future(computation) : membuat Future dengan computation function
+Future.delayed(duration, computation) : membuat Future dengan melakukan delay durasi tertentu
+Future.error(error) : membuat Future berisi data error
+Future.value(value) : membuat Future berisi data sukses

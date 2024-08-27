@@ -1,0 +1,6 @@
+Menggunakan Future, kita tidak bisa menggunakan perintah try catch finally 
+
+Namun, dengan menggabungkan beberapa method di Future, 
+kita bisa implementasikan 
+try catch finally dengan method then(), catchError() 
+dan whenComplete()

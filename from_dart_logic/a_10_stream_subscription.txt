@@ -1,0 +1,35 @@
+
+Berbeda dengan Future, pada Stream, karena bentuk datanya seperti 
+    aliran data, kita perlu melakukan subscribe jika 
+    ingin tahu data yang terdapat di Stream
+
+Stream hanya bisa di subscribe sebanyak satu kali, 
+    jika kita melakukan subscribe lagi terhadap stream yang sama,
+    maka otomatis akan error
+
+Untuk melakukan subscribe terhadap stream, 
+    kita bisa menggunakan method listen(callback), 
+    otomatis mengembalikan object StreamSubscription<T>
+
+https://api.dart.dev/stable/2.18.4/dart-async/StreamSubscription-class.html 
+
+
+########## Stream Subscription method: 
+
+Stream Subscription memiliki banyak method seperti di Future
+onData(callback) ketika stream menerima data 
+onError(callback) ketika stream error
+onDone(callback) ketika stream selesai
+cancel() membatalkan subscription
+pause() menghentikan sementara subscription
+resume() melanjutkan subscription
+
+
+######### Stream listen:
+Saat kita membuat Stream Subscription 
+    menggunakan method Stream.listen(callback), 
+    parameter callback tersebut secara otomatis 
+    menjadi onData callback di Stream Subscription (secara default)
+
+Jika kita mengubah onData(callback) lagi, 
+    maka secara otomatis callback di listen() akan diganti

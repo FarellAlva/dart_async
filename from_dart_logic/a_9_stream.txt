@@ -1,0 +1,34 @@
+Future adalah object async yang digunakan untuk membuat sebuah object,
+ bagaimana jika object-nya lebih dari satu? 
+ Anggap saja seperti Future Collection
+
+Dart menyediakan tipe data Stream, 
+ yaitu Future yang value nya bisa lebih dari satu
+
+Apa bedanya dengan Future<List<T>> ? 
+ Pada Future<List<T>> data List<T> harus lengkap baru Future bisa complete, 
+ pada Stream<T>, kita bisa mengirim data T ke Stream<T> secara bertahap, 
+ tidak perlu harus lengkap terlebih dahulu
+
+https://api.dart.dev/stable/2.18.4/dart-async/Stream-class.html 
+
+
+
+######## Stream constructor
+
+Ada banyak sekali Constructor untuk Stream
+
+empty() untuk membuat Stream kosong
+
+value(T) untuk membuat Stream<T> dengan satu value
+
+fromFuture(Future<T>) untuk membuat Stream<T> 
+    dengan satu value dari Future<T>
+
+fromFutures(Iterable<Future<T>>) untuk membuat Stream<T> 
+    dengan beberapa value dari Iterable Future<T>
+
+fromIterable(Iterable<T>) untuk membuat Stream<T> dengan beberapa 
+    value dari Iterable<T>
+
+periodic(duration, computation) untuk membuat Stream<T> secara periodik

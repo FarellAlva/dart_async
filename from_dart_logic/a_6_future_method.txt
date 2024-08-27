@@ -1,0 +1,18 @@
+Future memiliki banyak sekali method,
+ yang bisa kita gunakan untuk meregistrasikan callback/function yang akan
+  dipanggil ketika perubahan state di Future
+
+https://api.dart.dev/stable/2.18.4/dart-async/Future-class.html#instance-methods 
+
+yang sering digunakan:
+
+whenComplete(FutureOr<void> callback(T)) : Future<T>, dipanggil ketika Future selesai,
+ baik itu sukses atau error //defaultnya
+
+then(FutureOr<R> callback(T)) : Future<R>, dipanggil ketika Future sukses,
+ dan diubah menjadi nilai lainnya
+
+onError(FutureOr<R> callback(Error, StackTrace)) : Future<R>, dipanggil ketika Future error, 
+ untuk di ubah menjadi nilai lainnya
+
+catchError(callback(Error)), dipanggil ketika Future error
