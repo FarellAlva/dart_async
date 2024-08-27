@@ -1,0 +1,7 @@
+Dart mirip seperti di JavaScript,
+     dimana kita bisa membuat sebuah kode Asynchronous 
+     menggunakan kata kunci async
+     
+Di Dart, kita bisa membuat function Future<T> 
+    dengan menggunakan async, sehingga kode yang kita buat 
+    terlihat seperti kode Synchronous

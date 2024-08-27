@@ -1,0 +1,26 @@
+
+Timer adalah class di Dart yang bisa kita gunakan untuk 
+membuat pekerjaan yang terjadwal secara periodik
+
+https://api.dart.dev/stable/2.18.4/dart-async/Timer-class.html 
+
+## delayed Timer
+
+Jenis Timer pertama timer delayed task, dimana kita bisa meminta Timer untuk 
+    menjalankan sebuah task setelah batas waktu tertentu
+
+Kita bisa gunakan constuctor 
+
+Timer(duration, callback) untuk membuat delayed job di callback 
+    yang akan di jalankan setelah waktu duration tercapai
+
+
+
+### timer periodic
+
+jenis Timer kedua adalah periodic timer, dimana kita bisa meminta 
+    Timer untuk menjalankan sebuah pekerjaan secara periodik, misal tiap 2 detik
+
+Kita bisa gunakan constructor
+
+Timer.periodic(duration, callback) untuk membuat periodic timer

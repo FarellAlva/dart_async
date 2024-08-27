@@ -1,0 +1,9 @@
+Seperti yang sudah kita bahas di awal, 
+    Stream hanya bisa di subscribe oleh satu Stream Subscription
+
+Namun ada jenis Stream yang bisa di subscribe oleh lebih 
+    dari satu Stream Subscription, 
+    yaitu Broadcast Stream
+
+Untuk membuat Broadcast Stream, kita bisa gunakan method asBroadcastStream() 
+    pada Stream yang sudah kita buat
