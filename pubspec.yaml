@@ -15,4 +15,5 @@ dev_dependencies:
   test: ^1.25.7
   mockito: ^5.4.4
   build_runner: ^2.4.9 
+  async: ^2.10.0
 

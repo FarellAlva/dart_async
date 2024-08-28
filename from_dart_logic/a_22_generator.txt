@@ -1,0 +1,17 @@
+Dart memiliki fitur bernama Generator, 
+    yang bisa digunakan untuk membuat data collection Sync ataupun Async
+
+Data Sync akan mengembalikan Iterable<T> sedangkan data Async
+ akan mengembalikan Stream<T>
+
+Untuk membuat generator Sync, kita bisa tambahkan sync* di function
+Untuk membuat generator Async, kita bisa tambahkan async* di function
+Untuk mengembalikan value nya, kita bisa gunakan yield value
+
+
+/////// yeild*
+
+Selain yield, untuk mengirim value di Generator, terdapat yield*,
+    yang bisa digunakan untuk mengirim seluruh data Iterable<T> atau Stream<T>
+
+untuk mengirimkan lebih dari satu data

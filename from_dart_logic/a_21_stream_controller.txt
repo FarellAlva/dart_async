@@ -1,0 +1,7 @@
+Selain Completer yang bisa digunakan untuk membuat Future, 
+    Dart juga menyediakan class Stream Controller untuk membuat Stream
+
+Kasusnya juga cocok ketika kita membuat Stream misal ketika kita menggunakan 
+    library orang lain yang menggunakan callback
+    
+https://api.dart.dev/stable/2.18.4/dart-async/StreamController-class.html 

@@ -15,7 +15,7 @@ Stream<String> stream() {
 void main() {
   Stream<String> flow = stream();
   StreamSubscription<String> listen = flow.listen((data) {
-    print(data); //akan dipelace oleh onData
+    print(data); //akan di replace oleh onData
   });
 
   listen.onData((data) {

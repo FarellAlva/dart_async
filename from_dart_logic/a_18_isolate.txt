@@ -1,0 +1,23 @@
+Seperti yang diawal dijelaskan, bahwa semua kode Dart dijalankan
+     di dalam Isolate dengan single thread
+
+Karena hanya menggunakan satu thread, ketika ada kode yang melakukan
+     blocking, maka secara otomatis kode tersebut akan melakukan 
+     blocking seluruh event loop
+
+Hal ini sangat berbahaya, karena bisa membuat semua proses stuck, 
+    tidak berjalan
+https://api.dart.dev/stable/2.18.4/dart-isolate/Isolate-class.html 
+
+
+///////////////////
+membuat isolate
+
+Pada kasus diatas, kita bisa coba jalankan function block() di Isolate berbeda, 
+    sehingga tidak mengganggu Isolate utama yang sedang digunakan untuk menjalankan aplikasi
+
+Untuk membuat Isolate kita bisa gunakan static method :
+Isolate.spawn(function(T), T)
+
+Dimana function akan dieksekusi di Isolate 
+    berbeda dengan mengirim parameter T

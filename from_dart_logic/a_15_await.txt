@@ -1,0 +1,18 @@
+--masalah di future
+
+Saat kita menggunakan banyak sekali kode Asynchronous menggunakan Future, 
+    kadang ketika melakukan manipulasi datanya 
+    akan membuat kode kita sulit untuk dibaca
+
+/////////////
+Saat kita membuat function dengan kata kunci async, 
+    didalamnya kita bisa menggunakan kata kunci await
+
+Kata kunci await terlihat seperti melihat response dari Future, 
+    tapi sebenarnya cara kerjanya tidak seperti itu, 
+    cara kerjanya tetap seperti then() method di Future, 
+    hanya saja dengan menggunakan await, 
+    kode akan terlihat lebih mudah dibaca karena seperti gaya kode Synchronous
+
+Cara menggunakan kata kunci await cukup tambahkan di 
+    Future yang ingin kita ambil datanya

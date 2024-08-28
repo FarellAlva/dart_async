@@ -1,0 +1,23 @@
+Karena Isolate berjalan terpisah dengan Isolate lainnya, 
+    bagaimana pada kasus kita ingin mendapatkan nilai hasil dari 
+    perhitungan Isolate lain
+
+Misal kita ingin mengeksekusi function di Isolate lain,
+  namun hasil dari function nya ingin kita simpan dapatkan di 
+  Isolate utama misalnya
+
+
+//// recieve and send port
+
+Ini mirip channel jika di Golang, 
+    dimana kita bisa mengirim dan menerima data dari Isolate lain
+
+Kita cukup buat ReceivePort, lalu kirim SendPort yang terdapat 
+    di ReceivePort nya ke Isolate lain
+
+Di Isolate lain, kita bisa mengirim data menggunakan SendPort tersebut
+
+ReceivePort mirip seperti Stream, jadi kita bisa listen data dari ReceivePort
+
+https://api.dart.dev/stable/2.18.4/dart-isolate/ReceivePort-class.html 
+https://api.dart.dev/stable/2.18.4/dart-isolate/SendPort-class.html 

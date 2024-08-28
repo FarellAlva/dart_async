@@ -1,0 +1,5 @@
+AsyncMemoizer adalah class yang mirip dengan Async Cache,
+    yang membedakan adalah Async Memoize akan menyimpan data secara permanen,
+    tanpa ada durasi waktu
+
+https://pub.dev/documentation/async/latest/async/AsyncMemoizer-class.html 

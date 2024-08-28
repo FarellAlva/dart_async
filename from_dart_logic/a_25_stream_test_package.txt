@@ -1,0 +1,11 @@
+Package test juga menyediakan banyak function matcher untuk membantu 
+    kita ketika melakukan pengetesan terhadap jenis data Stream
+
+///stream matcher
+emits() match untuk single event
+emitsError() match untuk single error event
+emitsDone match untuk single done event
+emitsAnyOf() consume event match satu untuk beberapa kemungkinan data
+emitsInOrder() consume event match multiple matcher dengan urutan yang sudah ditentukan
+emitsInAnyorder() seperti emitsInOrder(), tapi tidak peduli urutannya
+neverEmits() memastikan stream selesai tanpa match data sama sekali

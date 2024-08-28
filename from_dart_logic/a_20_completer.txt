@@ -1,0 +1,8 @@
+Dart memiliki class bernama Completer, 
+    yang bisa kita gunakan untuk mempermudah membuat Future 
+
+Saat misal kita integrasi dengan library orang lain yang menggunakan 
+    Callback, kita ingin melakukan wrapping menjadi Future, kita bisa menggunakan Completer
+
+https://api.dart.dev/stable/2.18.4/dart-async/Completer-class.html 
+

@@ -1,0 +1,8 @@
+Package test di Dart dapat digunakan untuk melakukan pengetesan 
+    kode Async dalam bentuk Future
+
+Hal ini bisa mempermudah ketika kita akan membuat unit test 
+    kode Asynchronous
+
+Di dalam test(), kita bisa masukkan function async, sehingga bisa menggunakan await
+

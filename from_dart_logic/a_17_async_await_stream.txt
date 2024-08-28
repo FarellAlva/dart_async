@@ -1,0 +1,8 @@
+Selain digunakan untuk Future, 
+    Async Await juga bisa digunakan dalam Stream
+
+Dengan begitu kita bisa menggunakan Stream seperti perulangan biasa
+
+Namun perlu diperhatikan, saat menggunakan Async Await Stream, 
+    pastikan Stream akan selesai
+

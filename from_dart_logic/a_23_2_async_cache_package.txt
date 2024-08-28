@@ -1,0 +1,6 @@
+AsyncClass merupakan class di Async Package yang 
+    digunakan untuk menjalankan async function, 
+    namun hasilnya disimpan di memory selama durasi waktu tertentu
+
+Jika durasi waktu sudah lewat, maka async function akan di eksekusi lagi
+https://pub.dev/documentation/async/latest/async/AsyncCache-class.html 
